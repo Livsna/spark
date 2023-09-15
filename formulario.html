@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lol Custom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJmy7zU6zXp0jFtVr7CzFmDR/4k53vaugssn4yPCEpO1dWA0e99SvXnB1P3tc5Yw" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+	    body {
+	    	background-color: #f8f9fa;
+		}
+
+		h2 {
+		    color: #343a40;
+		}
+		
+		.container {
+		    background-color: #fff;
+		    padding: 20px;
+		    border-radius: 5px;
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		    margin-top: 20px;
+		}
+		
+		.btn-primary, .btn-info, .btn-danger, .btn-success {
+		    font-weight: bold;
+		}
+		#geral {
+		    width: 70%;
+		    border: 2px solid black;
+		    margin: 0px auto;
+		    justify-content: center;
+		}
+		div {
+		    margin: 5px auto;
+		
+		}
+    </style>
+</head>
+<body>
+
+<div class="container" id="geral">
+    <h2>Adicionar um personagem</h2>
+
+    <form action="/processar" method="post">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome:</label>
+            <input type="text" class="form-control" id="nome" name="nome">
+        </div>
+
+        <div class="mb-3">
+            <label for="dataL" class="form-label">Data de Lançamento:</label>
+            <input type="text" class="form-control" id="dataL" name="dataL">
+        </div>
+
+        <div class="mb-3">
+            <label for="regiao" class="form-label">Região:</label>
+            <input type="text" class="form-control" id="regiao" name="regiao">
+        </div>
+
+        <div class="mb-3">
+            <label for="descricao" class="form-label">Descreva o personagem:</label>
+            <textarea class="form-control" id="descricao" name="descricao"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+    <h2>Consultar e excluir personagens</h2>
+    <form action="" method="">
+        <div class="mb-3">
+            <h4>Detalhar um personagem:</h4>
+            <input type="text" class="form-control" id="detalheI" name="detalheI">
+            <button type="button" class="btn btn-info mt-2">Detalhar</button>
+        </div>
+
+        <div class="mb-3">
+            <h4>Excluir um personagem:</h4>
+            <input type="text" class="form-control" id="excluir" name="excluir">
+            <button type="button" class="btn btn-danger mt-2">Excluir</button>
+        </div>
+
+        <button type="button" class="btn btn-success">Listar Todos</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+GjFpd5K5l5z5ZsTjQ09zFtAn5z3G1vxCZ9z6p2f5G5A4Q5d" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua5r5f5TktB5F7z4Rzx5gu6F5f5d5j5U5F5W5F5X5f5T5B5T5V5U5I5i5Z5s5N5W5m5" crossorigin="anonymous"></script>
+
+</body>
+</html>
